@@ -7,10 +7,16 @@
     
 </head>
 <body>
-    <h3>Highlight Input</h1>
+    <h3>Tree Builder</h1>
+    
     <form id = "form" action="popup.html" method = "GET"> 
-        <input type="text" id="inputTree" required placeholder="ex: [1,2, None, 3 4]" />
-        <button type="submit" id="submit-build">Build</button>
+        <input type="text" id="inputTreeString" required placeholder="ex: [1,2, None, 3 4]" />
+        <div>
+            <button type="submit" id="submit-build">Build</button>
+            <button type="reset" id="reset">Reset</button>
+        </div>
+        
+
     </form>
     <div id="error"></div>
     <div id="output"></div>

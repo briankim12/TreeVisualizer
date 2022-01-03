@@ -1,4 +1,4 @@
-const inputTree = document.getElementById("inputTree");
+const inputTreeString = document.getElementById("inputTreeString");
 const error = document.getElementById("error");
 const form = document.getElementById("form");
 const output = document.getElementById("output")
@@ -8,9 +8,17 @@ const output = document.getElementById("output")
 
 form.addEventListener("submit", (e) => {
     e.preventDefault()
-    error.innerText = "Button Pressed"
-    console.log("submit-build pressed")
-    console.log(inputTree.value)
+    console.log(inputTreeString.value)
+    const inputTreeJSON = JSON.parse(inputTreeString.value)
+
+
+    console.log(inputTreeJSON)
+
+
+
+    error.innerText = "{typeof(inputTreeArray.value)}"
+ 
+    
 
 });
 
