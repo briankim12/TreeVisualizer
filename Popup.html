@@ -4,23 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TreeBuilder 1.0.0</title>
+    <link rel="stylesheet" href="styles.css">
     
 </head>
 <body>
-    <h3>Tree Builder</h1>
-    
-    <form id = "form" action="popup.html" method = "GET"> 
-        <input type="text" id="inputTreeString" required placeholder="ex: [1,2, None, 3 4]" />
-        <div>
-            <button type="submit" id="submit-build">Build</button>
-            <button type="reset" id="reset">Reset</button>
-        </div>
+    <div class="container">
+        <h3>Tree Builder</h1>
+            <form class="form" id = "form" action="popup.html" method = "GET"> 
+                <div class="form-control">
+                    <label for="inputTree">Input Tree</label>
+                    <input type="text" id="inputTree" placeholder="ex: [1,2, None, 3 4]" />
+                    <!-- <i class="fas fa-check-circle"></i>
+                    <i class= "fas fa-exclamation-circle"></i> -->
+                    <small>Error Message</small>
+                </div>
+                
+                <div>
+                    <button type="submit" id="submit-build">Build</button>
+                    <button type="reset" id="reset">Reset</button>
+                </div>
+                
         
+            </form>
+            
+            <div id="error"></div>
+            <div id="output"></div>
+        
+            <script src="popup.js"></script>
+    </div>
 
-    </form>
-    <div id="error"></div>
-    <div id="output"></div>
 
-    <script src="popup.js"></script>
+    
 </body>
 </html>
